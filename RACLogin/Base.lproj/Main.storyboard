@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAu-2O-8Wv">
+                                <rect key="frame" x="137" y="140" width="100" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3mq-22-IPG"/>
+                                    <constraint firstAttribute="width" constant="100" id="Pge-SS-2fd"/>
+                                </constraints>
+                                <state key="normal" title="发送验证码"/>
+                                <connections>
+                                    <action selector="sendClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w8V-W6-4MU"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gaU-cM-NCR">
+                                <rect key="frame" x="67" y="207" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="swX-JG-DCd"/>
+                                </constraints>
+                                <mutableString key="text">随意拖动这里,并不会影响Timer
+随意拖动这里,并不会影响Timer
+随意拖动这里,并不会影响Timer
+随意拖动这里,并不会影响Timer
+随意拖动这里,并不会影响Timer
+随意拖动这里,并不会影响Timer
+随意拖动这里,并不会影响Timer
+随意拖动这里,并不会影响Timer
+随意拖动这里,并不会影响Timer
+随意拖动这里,并不会影响Timer
+随意拖动这里,并不会影响Timer
+随意拖动这里,并不会影响Timer
+随意拖动这里,并不会影响Timer
+随意拖动这里,并不会影响Timer
+随意拖动这里,并不会影响Timer
+随意拖动这里,并不会影响Timer
+随意拖动这里,并不会影响Timer
+随意拖动这里,并不会影响Timer
+随意拖动这里,并不会影响Timer
+随意拖动这里,并不会影响Timer
+随意拖动这里,并不会影响Timer
+随意拖动这里,并不会影响Timer
+随意拖动这里,并不会影响Timer
+随意拖动这里,并不会影响Timer
+随意拖动这里,并不会影响Timer
+随意拖动这里,并不会影响Timer
+随意拖动这里,并不会影响Timer
+随意拖动这里,并不会影响Timer</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EAu-2O-8Wv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3hj-MM-32a"/>
+                            <constraint firstItem="gaU-cM-NCR" firstAttribute="top" secondItem="EAu-2O-8Wv" secondAttribute="bottom" constant="27" id="Mtx-eV-dmN"/>
+                            <constraint firstItem="EAu-2O-8Wv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="120" id="OE8-Wb-z9w"/>
+                            <constraint firstItem="gaU-cM-NCR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cAO-ca-tgO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gaU-cM-NCR" secondAttribute="trailing" constant="52" id="edM-yu-hJU"/>
+                            <constraint firstItem="gaU-cM-NCR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="ihn-7V-IG1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentFiled" destination="gaU-cM-NCR" id="c0d-bI-DeF"/>
+                        <outlet property="sendBtn" destination="EAu-2O-8Wv" id="JMK-IY-OM8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="313" y="3"/>
+        </scene>
+    </scenes>
+</document>
